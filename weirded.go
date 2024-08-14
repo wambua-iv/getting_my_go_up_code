@@ -47,3 +47,12 @@ func customed() {
 	tags = append(tags, "Jajo", "names")
 	fmt.Println(tags)
 }
+
+func main () {
+	var it *IntTree
+
+	it = it.Insert(5)
+	it = it.Insert(3)
+
+	fmt.Println(it)
+}
