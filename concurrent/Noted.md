@@ -24,3 +24,6 @@ a := <- ch
 //closing a channel
 close(ch)
 ```
+
+Closing a Channel is done by the goroutine that is writing to the channel
+Unsed channels can be detected by the garbage collector is they are not in use :sparkles:
