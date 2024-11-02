@@ -85,7 +85,7 @@ The Lock() to acquires the lock by using the atomic.CompareAndSwapInt32() functi
 
 The Unlock() releases the lock by using the atomic.CompareAndSwapInt32() function comparing the state variable's value with 1 and swaps it with 0 if they are equal. If the swap is successful, indicating that the lock was held, the Unlock() method calls runtime_SemreleaseMutex() to wake up any waiting goroutine.
 
-    > :green_book: 
+:green_book: 
     > Atomic operations ensures that the lock’s state is updated atomically, without interference from other goroutines. 
     > Atomicity guarantees thread safety and eliminates the need for additional locks or synchronization mechanisms.
 
@@ -94,8 +94,9 @@ The Unlock() releases the lock by using the atomic.CompareAndSwapInt32() functio
 
 occur when multiple goroutines access and modify shared data concurrently, leading to unpredictable and erroneous behavior
 
-    > :pushpin: Atomics in the sync package allow for elimination of race conditions
-    > :pushpin: Mutexes prevent race conditions by allowing only one goroutine to acquire the lock and access the shared resource.
+:pushpin: Atomics in the sync package allow for elimination of race conditions
+
+:pushpin: Mutexes prevent race conditions by allowing only one goroutine to acquire the lock and access the shared resource.
 
 
   
