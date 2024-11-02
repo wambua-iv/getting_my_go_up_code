@@ -46,7 +46,8 @@ WaitGroups are passed as pointers/references
     > :green_book: Without calling wait.Add() the wait group returns immediately without the concurrent code.
 
 ### Type Assertions using atomic.Load()
-    the compiler runs a type assertion against the value passed into the function
+
+the compiler runs a type assertion against the value passed into the function
 
     ```go
         type student struct {
@@ -60,9 +61,9 @@ WaitGroups are passed as pointers/references
         valued := val.Load().(student)
     ```
 
-    Ensuring that type assertion doesnt fail pass the zero value for the type
+Ensuring that type assertion doesnt fail pass the zero value for the type
 
-    ```go
+  ```go
         type student struct {
 	        grade map[string]int
         }
@@ -71,7 +72,7 @@ WaitGroups are passed as pointers/references
       	val.Store(student{grade: map[string]int {}})
         valued := val.Load().(student)
         valued.grade["intro to prog"] = 60
-    ```
+  ```
 
 ## Mutex
   > Mutual Exclusion
