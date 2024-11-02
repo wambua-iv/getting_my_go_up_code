@@ -43,7 +43,7 @@ Unsed channels can be detected by the garbage collector is they are not in use :
 WaitGroups are passed as pointers/references
 
 ## Wait Group Issues
-    > :green_book: Without calling wait.Add() the wait group returns immediately without the concurrent code.
+:green_book: Without calling wait.Add() the wait group returns immediately without the concurrent code.
 
 ### Type Assertions using atomic.Load()
 
