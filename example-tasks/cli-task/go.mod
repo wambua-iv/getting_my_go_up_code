@@ -2,10 +2,7 @@ module github.com/wambua-iv/getting_my_go_up_code/example-tasks/cli-task
 
 go 1.24.1
 
-require (
-	github.com/google/uuid v1.6.0
-	github.com/spf13/cobra v1.9.1
-)
+require github.com/spf13/cobra v1.9.1
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
